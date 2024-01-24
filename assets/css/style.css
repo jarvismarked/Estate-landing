@@ -241,7 +241,7 @@ a {
 .featured .desc {
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.88
+  line-height: 1.88;
 }
 .featured .link {
   font-size: 18px;
@@ -259,11 +259,11 @@ a {
   display: flex;
 }
 .featured .thumb {
- width: 100%;
-width: 350px;
-height: 227px;
-object-fit: cover;
-border-radius: 12px 12px 0 0;
+  width: 100%;
+  width: 350px;
+  height: 227px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
 }
 
 .featured .item {
@@ -272,10 +272,10 @@ border-radius: 12px 12px 0 0;
   flex: 1;
   flex-shrink: 0;
   border-radius: 12px;
-  background: #FFF;
-  box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.60);
+  background: #fff;
+  box-shadow: 0px 65px 80px -46px rgba(226, 238, 249, 0.6);
 }
-.featured .item .body{
+.featured .item .body {
   margin-left: 20px;
   margin-right: 30px;
 }
@@ -284,20 +284,82 @@ border-radius: 12px 12px 0 0;
   font-weight: 600;
   line-height: 1.5;
   margin: 17px auto 11px auto;
-
 }
 
 .featured .item .desc {
-  color: #A3A6AB;
+  color: #a3a6ab;
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 23px;
   --line-clamp: 3;
- 
 }
 .featured .item .info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
+}
+
+/* ========== Featured ============== */
+.stat {
+  margin-top: 75px;
+  padding: 50 0px;
+}
+.stat .content {
+  width: 1048px;
+}
+
+.stat .row {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.stat .row .img-block,
+.stat .row .info {
+  width: 50%;
+}
+
+.stat .row .img-block img {
+  display: block;
+  width: 400px;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-left: auto;
+}
+
+.stat .row .info {
+  margin-left: 165px;
+  margin-bottom: 20px;
+  padding: 79 0 0 165px;
+}
+
+.stat .row .info .sub-title {
+  position: relative;
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.29; /* 128.571% */
+  width: 269px;
+  height: 142px;
+}
+.stat .sub-title::before {
+  position: absolute;
+  left: 0px;
+  top: -10px;
+  content: "";
+  display: block;
+  width: 41px;
+  height: 4px;
+  border-radius: 12px;
+  background: #000339;
+}
+
+.stat .row .info .desc {
+  width: 309px;
+  margin-top: 10px;
+  color: #5a6473;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.9; /* 187.5% */
 }
